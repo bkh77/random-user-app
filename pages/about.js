@@ -9,8 +9,6 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-const size = 12;
-
 export default function About() {
   return (
     <>
@@ -69,24 +67,36 @@ export default function About() {
           <div className="mt-4">
             <Link href={"https://www.facebook.com/baxtiyor.xasanov.771"}>
               <a target="_blank" rel="noreferrer">
-                <FacebookIcon className="w-12 h-12 hover:text-zinc-500" />
+                <FacebookIcon
+                  sx={{ fontSize: 45 }}
+                  className="hover:text-zinc-500"
+                />
               </a>
             </Link>
             <Link href={"https://www.instagram.com/bakhtiyor_khasanov/"}>
               <a target="_blank" rel="noreferrer">
-                <InstagramIcon className="w-12 h-12 hover:text-zinc-500" />
+                <InstagramIcon
+                  sx={{ fontSize: 45 }}
+                  className=" hover:text-zinc-500"
+                />
               </a>
             </Link>
             <Link
               href={"https://www.linkedin.com/in/bakhtiyor-khasanov-185076167/"}
             >
               <a target="_blank" rel="noreferrer">
-                <LinkedInIcon className="w-12 h-12 hover:text-zinc-500" />
+                <LinkedInIcon
+                  sx={{ fontSize: 45 }}
+                  className="hover:text-zinc-500"
+                />
               </a>
             </Link>
             <Link href={"https://github.com/bkh77"}>
               <a>
-                <GitHubIcon className="w-12 h-12 hover:text-zinc-500" />
+                <GitHubIcon
+                  sx={{ fontSize: 45 }}
+                  className=" hover:text-zinc-500"
+                />
               </a>
             </Link>
           </div>
