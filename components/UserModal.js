@@ -48,7 +48,7 @@ export default function UserModal({ openModal, setOpenModal, item }) {
             </p>
           </div>
 
-          <div className="text-zinc-600 space-y-2  ">
+          <div className="text-zinc-600 space-y-2  flex flex-col justify-center">
             <p>
               <b>Gender: </b> {item?.gender}
             </p>
@@ -71,7 +71,7 @@ export default function UserModal({ openModal, setOpenModal, item }) {
             </p>
           </div>
 
-          <div className="text-zinc-600 space-y-2 " >
+          <div className="text-zinc-600 space-y-2 flex flex-col justify-center" >
             <p>
               <b>Email:</b> {item?.email} 
             </p>

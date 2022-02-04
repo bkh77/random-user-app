@@ -2,19 +2,20 @@ import React from "react";
 import Image from "next/image";
 import me from "../public/img/me.png";
 import Link from "next/link";
-import facebook from "../public/facebook.svg";
-import telegram from "../public/telegram.svg";
-import instagram from "../public/instagram.svg";
-import linkedin from "../public/linkedin.svg";
 import Head from "next/head";
 
-const iconSize = 44;
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
+const size = 12;
 
 export default function About() {
   return (
     <>
       <Head>
-        <title>Random user app | About</title>        
+        <title>Random user app | About</title>
       </Head>
 
       <div className="shadow-lg mx-auto px-6 py-12 rounded-2xl space-y-4 grid grid-cols-1 sm:grid-cols-2 lg:h-[476px]">
@@ -40,7 +41,24 @@ export default function About() {
 
         <div className="text-zinc-600 lg:text-lg text-center flex flex-col justify-center">
           <p>
-            This project was developed by <br /> Next.js, Tailwindcss and custom
+            This project was developed by <br />{" "}
+            <Link href="https://nextjs.org/">
+              <a target="_blank" rel="noreferrer" className="underline">
+                Next.js
+              </a>
+            </Link>
+            ,{" "}
+            <Link href="https://tailwindcss.com/">
+              <a target="_blank" rel="noreferrer" className="underline">
+                Tailwindcss
+              </a>
+            </Link>{" "}
+            and{" "}
+            <Link href="https://tailwindcss.com/docs/responsive-design">
+              <a target="_blank" rel="noreferrer" className="underline">
+                Responsive
+              </a>
+            </Link>{" "}
             design.
           </p>
           <p>
@@ -51,48 +69,24 @@ export default function About() {
           <div className="mt-4">
             <Link href={"https://www.facebook.com/baxtiyor.xasanov.771"}>
               <a target="_blank" rel="noreferrer">
-                <Image
-                  className="text-zinc-500"
-                  src={facebook}
-                  alt="Bakhtiyor's facebook"
-                  width={iconSize}
-                  height={iconSize}
-                />
+                <FacebookIcon className="w-12 h-12 hover:text-zinc-500" />
               </a>
             </Link>
             <Link href={"https://www.instagram.com/bakhtiyor_khasanov/"}>
               <a target="_blank" rel="noreferrer">
-                <Image
-                  className="text-zinc-500"
-                  src={instagram}
-                  alt="Bakhtiyor's instagram"
-                  width={iconSize}
-                  height={iconSize}
-                />
+                <InstagramIcon className="w-12 h-12 hover:text-zinc-500" />
               </a>
             </Link>
             <Link
               href={"https://www.linkedin.com/in/bakhtiyor-khasanov-185076167/"}
             >
               <a target="_blank" rel="noreferrer">
-                <Image
-                  className="text-zinc-500"
-                  src={linkedin}
-                  alt="Bakhtiyor's linkedin"
-                  width={iconSize}
-                  height={iconSize}
-                />
+                <LinkedInIcon className="w-12 h-12 hover:text-zinc-500" />
               </a>
             </Link>
-            <Link href={"https://t.me/bakhtiyor_reactdev"}>
+            <Link href={"https://github.com/bkh77"}>
               <a>
-                <Image
-                  className="text-zinc-500"
-                  src={telegram}
-                  alt="Bakhtiyor's telegram"
-                  width={iconSize}
-                  height={iconSize}
-                />
+                <GitHubIcon className="w-12 h-12 hover:text-zinc-500" />
               </a>
             </Link>
           </div>
